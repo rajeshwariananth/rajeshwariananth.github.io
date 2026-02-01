@@ -1,242 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajeshwari Anantharaman - Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajeshwari Anantharaman - Profile</title>
 
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #ffffff;
-            background-color: #000000;
-            max-width: 720px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    max-width: 760px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
 
-        header {
-            margin-bottom: 3.5rem;
-        }
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
 
-        h1 {
-            font-size: 2.6rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 0.4rem;
-        }
+.tagline {
+    color: #bfbfbf;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
 
-        .tagline {
-            color: #bfbfbf;
-            font-size: 1.2rem;
-        }
+/* ===== BOX ===== */
+.box {
+    border: 1px solid #1f1f1f;
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+}
 
-        /* ===== PREMIUM SECTION BOX ===== */
-        .box {
-            border: 1px solid #1f1f1f;
-            border-radius: 16px;
-            padding: 26px;
-            margin-bottom: 32px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 34px rgba(255,255,255,0.06);
+}
 
-        .box:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.06);
-        }
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
 
-        h2 {
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #2a2a2a;
-            padding-bottom: 6px;
-            margin-bottom: 18px;
-        }
+p {
+    color: #e6e6e6;
+}
 
-        p {
-            color: #e6e6e6;
-            margin-bottom: 1rem;
-        }
+/* ===== PROJECT / BLOG CARD ===== */
+.card {
+    border: 1px solid #262626;
+    border-radius: 14px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
 
-        /* ===== PROJECT CARDS ===== */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(255,255,255,0.05);
+}
 
-        .project-card {
-            border: 1px solid #262626;
-            border-radius: 14px;
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
-        }
+/* ===== BLOG GRID ===== */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
-        .project-title {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
+@media (min-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
-        /* ===== LINKS ===== */
-        .links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+/* ===== FEATURED BLOG ===== */
+.featured {
+    grid-column: 1 / -1;
+    border: 1px solid #3a3a3a;
+    background: linear-gradient(180deg, #050505, #000);
+}
 
-        .links li {
-            margin-bottom: 12px;
-        }
+/* ===== CTA ===== */
+.read {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
 
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #ffffff;
-            transition: all 0.2s ease;
-        }
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        a:hover {
-            background-color: #ffffff;
-            color: #000000;
-        }
+a:hover {
+    background: #fff;
+    color: #000;
+}
 
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            color: #8c8c8c;
-            margin-top: 4rem;
-        }
-    </style>
+/* ===== CONNECT SPLIT ===== */
+.connect-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .connect-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-top: 4rem;
+}
+
+/* ===== ICONS ===== */
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Rajeshwari Anantharaman</h1>
-        <p class="tagline">Data Analyst & Insight Enthusiast</p>
-        <p class="tagline">Numpy Ninja</p>
-    </header>
+<header>
+    <h1>Rajeshwari Anantharaman</h1>
+    <p class="tagline">Data Analyst @ 
+            <a href="https://www.numpyninja.com/"> Numpy Ninja </a>
+    </p>
+</header>
 
-    <section class="box" id="about">
-        <h2>About Me</h2>
-        <p>
-            I transform complex datasets into actionable narratives.
-            Specialized in SQL, Python, and data visualization, I focus on
-            uncovering the “why” behind the numbers.
-        </p>
-    </section>
+<section class="box">
+    <h2>About Me</h2>
+    <p>I transform complex datasets into actionable narratives using SQL, Python, and data visualization.</p>
+</section>
 
-    <section class="box" id="skills">
-        <h2>Skills</h2>
-        <p>SQL, Tableau, PowerBI, Python, PostMan, JIRA, Slack, MS Teams</p>
-    </section>
+<section class="box">
+    <h2>Skills</h2>
+    <p>SQL, Tableau, PowerBI, Python, PostMan, JIRA, Slack, MS Teams</p>
+</section>
 
-    <section class="box" id="projects">
-        <h2>Projects</h2>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-title">Sepsis Analytics Project</div>
-                <p>
-                    Clinical data exploration focused on early sepsis indicators,
-                    biomarker trends, and outcome-driven insights using SQL and Tableau.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">Healthcare Dashboard</div>
-                <p>
-                    Interactive Tableau dashboard highlighting patient risk stratification,
-                    utilization metrics, and alert-based monitoring.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="box" id="blogs">
-    <h2>Blogs</h2>
-
-    <!-- SQL Blogs -->
-    <div class="project-card">
-        <div class="project-title">SQL Blogs</div>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/sql-data-types-made-simple-a-clear-guide-for-beginners">
-                SQL Data Types Made Simple: A Clear Guide for Beginners – Part I
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/sql-data-types-made-simple-a-clear-guide-for-beginners-part-ii">
-                SQL Data Types Going Beyond the Basics – Part II
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/sql-made-simple-a-beginner-s-journey-from-basics-to-keys">
-                SQL Made Simple: A Beginner’s Journey from Basics to Keys
-            </a>
-        </p>
-    </div>
-
-    <!-- Tableau Blogs -->
-    <div class="project-card">
-        <div class="project-title">Tableau Blogs</div>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/blue-green-fields-in-tableau">
-                Blue & Green Fields in Tableau
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/unlocking-the-power-of-data-visualization-in-tableau-the-5-core-concepts">
-                Unlocking the Power of Data Visualization in Tableau: The 5 Core Concepts
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/tableau-mark-card-magic-make-your-data-pop">
-                Tableau Mark Card Magic: Make Your Data Pop!
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/building-clinical-insight-with-tableau-abg-analysis-in-sepsis">
-                Building Clinical Insight with Tableau: ABG Analysis in Sepsis
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/tableau-as-a-clinical-watchdog-alerting-doctors-to-sirs-risk">
-                Tableau as a Clinical Watchdog: Alerting Doctors to SIRS Risk
-            </a>
-        </p>
-        <p>
-            <a href="https://www.numpyninjaacademy.com/post/understanding-sepsis-through-a-simple-scatterplot">
-                Understanding Sepsis Through a Simple Scatterplot
-            </a>
-        </p>
+<section class="box">
+    <h2>Projects</h2>
+    <div class="card">
+        <div class="card-title">Sepsis Analytics Project</div>
+        <p>Clinical analytics focused on early sepsis indicators and outcome-driven insights.</p>
     </div>
 </section>
 
+<!-- ===== BLOGS ===== -->
+<section class="box">
+<h2>Blogs</h2>
 
-    <section class="box" id="links">
-        <h2>Connect</h2>
+<div class="blog-grid">
+
+    <!-- FEATURED -->
+    <div class="card featured">
+        <div class="card-title">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+            Featured — Clinical Analytics
+        </div>
+        <p>Understanding SEPSIS Through a Simple Scatterplot</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/understanding-sepsis-through-a-simple-scatterplot">
+            Read Article →
+        </a>
+    </div>
+
+    <!-- SQL -->
+    <div class="card">
+        <div class="card-title">
+            <svg class="icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"/></svg>
+            SQL Blogs
+        </div>
+        <p>SQL Data Types Made Simple – Part I</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/sql-data-types-made-simple-a-clear-guide-for-beginners">Read Article →</a>
+    </div>
+
+    <!-- Tableau -->
+    <div class="card">
+        <div class="card-title">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><rect x="9" y="15" width="6" height="6"/></svg>
+            Tableau Blogs
+        </div>
+        <p>Tableau as a Clinical Watchdog: Alerting Doctors to SIRS Risk</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/tableau-as-a-clinical-watchdog-alerting-doctors-to-sirs-risk">Read Article →</a>
+    </div>
+
+</div>
+</section>
+
+<!-- ===== CONNECT ===== -->
+<section class="box">
+    <div class="connect-grid">
+        <div>
+            <h2>Connect</h2>
+            <p>Let’s collaborate on analytics, healthcare insights, and data storytelling.</p>
+        </div>
+
         <ul class="links">
             <li><a href="https://www.linkedin.com/in/rajehwari-anantharaman-9a3635383">LinkedIn</a></li>
             <li><a href="https://github.com/rajeshwariananth">GitHub</a></li>
-            <li><a href="https://public.tableau.com/app/profile/rajehwari.anantharaman/vizzes">Tableau Public / Portfolio</a></li>
+            <li><a href="https://public.tableau.com/app/profile/rajehwari.anantharaman/vizzes">Tableau Public</a></li>
             <li><a href="https://medium.com/@rajeshwariananth">Medium</a></li>
-            <li><a href="mailto:rajeshwariananth@gmail.com">Email Me</a></li>
+            <li><a href="mailto:rajeshwariananth@gmail.com">Email</a></li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 • Rajeshwari Anantharaman</p>
-    </footer>
+<footer>
+    &copy; 2026 • Rajeshwari Anantharaman • USA
+</footer>
 
 </body>
 </html>
