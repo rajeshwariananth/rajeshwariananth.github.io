@@ -157,15 +157,45 @@ footer {
     height: 20px;
     fill: white;
 }
+/* ===== Photo ===== */
+header img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+header img {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header img {
+        margin-bottom: 15px;
+    }
+}
+    
+
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Rajeshwari Anantharaman</h1>
-    <p class="tagline">Data Analyst @ 
-            <a href="https://www.numpyninja.com/"> Numpy Ninja </a>
+<header style="display:flex; align-items:center; gap:20px; margin-bottom:3rem;">
+    <!-- Profile Photo -->
+    <div style="flex-shrink:0;">
+        <img src="your-photo.jpg" 
+             alt="Rajeshwari Anantharaman" 
+             style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:2px solid #fff;">
+    </div>
+    
+    <!-- Name & Tagline -->
+    <div>
+        <h1 style="margin:0; font-size:2.6rem;">Rajeshwari Anantharaman</h1>
+        <p class="tagline" style="margin-top:5px; color:#bfbfbf; font-size:1.2rem;">Data Analyst @ 
+        <a href="https://www.numpyninja.com/"> Numpy Ninja </a>
     </p>
 </header>
 
