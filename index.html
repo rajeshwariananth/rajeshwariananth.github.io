@@ -53,6 +53,12 @@ h2 {
 p {
     color: #e6e6e6;
 }
+    
+.box span:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: default;
+}
 
 /* ===== PROJECT / BLOG CARD ===== */
 .card {
@@ -165,21 +171,134 @@ footer {
 
 <section class="box">
     <h2>About Me</h2>
-    <p>I transform complex datasets into actionable narratives using SQL, Python, and data visualization.</p>
+    <p>I am a data analyst specializing in <b>healthcare analytics </b>, transforming complex clinical datasets into actionable insights. 
+        Skilled in <b>SQL, Python, and Tableau</b>, I design intuitive dashboards and predictive models that drive informed decisions. 
+        Notably, I built a <b>predictive model for sepsis outcomes</b>, enabling early detection and improving patient care strategies.</p>
 </section>
 
-<section class="box">
+<section class="box" id="skills">
     <h2>Skills</h2>
-    <p>SQL, Tableau, PowerBI, Python, PostMan, JIRA, Slack, MS Teams</p>
-</section>
-
-<section class="box">
-    <h2>Projects</h2>
-    <div class="card">
-        <div class="card-title">Sepsis Analytics Project</div>
-        <p>Clinical analytics focused on early sepsis indicators and outcome-driven insights.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">SQL</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">Python</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">Tableau</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">Power BI</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">JIRA</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">Slack</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">MySQL</span>
+        <span style="padding:6px 12px; border:1px solid #fff; border-radius:12px; transition:0.2s;">Postman</span>
     </div>
 </section>
+
+<section class="box" id="projects">
+    <h2>Projects</h2>
+
+    <div class="blog-grid">
+
+        <!-- FEATURED PROJECT -->
+        <div class="card featured">
+            <div class="card-title">
+                <!-- Python/Analytics Icon -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                </svg>
+                Featured — Sepsis Early Detection
+            </div>
+            <p>
+                Analyzed hospital EHR datasets to identify early sepsis indicators. Built predictive models to flag high-risk patients, enabling early interventions.
+            </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="6" height="6"/>
+                    <rect x="15" y="3" width="6" height="6"/>
+                    <rect x="9" y="15" width="6" height="6"/>
+                </svg>
+                Patient Risk Stratification Dashboard
+            </div>
+            <p>
+                Developed an interactive Tableau dashboard to monitor patient risk scores across departments, streamlining prioritization of critical cases.
+            </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                </svg>
+                ABG Analysis in Sepsis
+            </div>
+            <p>
+                Visualized trends in Arterial Blood Gas results for sepsis patients to identify patterns in oxygenation and acid-base balance for ICU teams.
+            </p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="6" height="6"/>
+                    <rect x="15" y="3" width="6" height="6"/>
+                    <rect x="3" y="15" width="6" height="6"/>
+                    <rect x="15" y="15" width="6" height="6"/>
+                </svg>
+                Hospital Resource Utilization Dashboard
+            </div>
+            <p>
+                Tracked bed occupancy, staff allocation, and equipment usage with Power BI to optimize hospital resources and reduce bottlenecks.
+            </p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                </svg>
+                Clinical Outcome Prediction
+            </div>
+            <p>
+                Built predictive models to forecast patient outcomes using historical demographic and clinical data, supporting proactive interventions.
+            </p>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="6" height="6"/>
+                    <rect x="15" y="3" width="6" height="6"/>
+                    <rect x="9" y="15" width="6" height="6"/>
+                </svg>
+                Tableau Mark Card Magic
+            </div>
+            <p>
+                Created advanced Tableau visualizations with mark cards, dual-axis charts, and calculated fields to make clinical data more actionable and visually intuitive.
+            </p>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="card">
+            <div class="card-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                </svg>
+                SQL Data Insights for Hospital Metrics
+            </div>
+            <p>
+                Designed SQL queries to extract hospital metrics including readmission rates, lab test distributions, and patient demographics for administrative insights.
+            </p>
+        </div>
+
+    </div>
+</section>
+
 
 <!-- ===== BLOGS ===== -->
 <section class="box">
@@ -207,6 +326,10 @@ footer {
         </div>
         <p>SQL Data Types Made Simple – Part I</p>
         <a class="read" href="https://www.numpyninjaacademy.com/post/sql-data-types-made-simple-a-clear-guide-for-beginners">Read Article →</a>
+        <p>SQL Data Types Made Simple – Part II</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/sql-data-types-made-simple-a-clear-guide-for-beginners-part-ii">Read Article →</a>
+        <p>A Beginner’s Journey from Basics to Keys</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/sql-made-simple-a-beginner-s-journey-from-basics-to-keys">Read Article →</a>
     </div>
 
     <!-- Tableau -->
@@ -215,6 +338,16 @@ footer {
             <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><rect x="9" y="15" width="6" height="6"/></svg>
             Tableau Blogs
         </div>
+        <p>Tableau as a Clinical Watchdog: Alerting Doctors to SIRS Risk</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/tableau-as-a-clinical-watchdog-alerting-doctors-to-sirs-risk">Read Article →</a>
+        <p>Tableau Blogs Blue & Green fields in Tableau</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/blue-green-fields-in-tableau">Read Article →</a>
+        <p>Unlocking the Power of Data Visualization in Tableau: The 5 Core Concepts</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/unlocking-the-power-of-data-visualization-in-tableau-the-5-core-concepts">Read Article →</a>
+        <p>Tableau Mark Card Magic: Make Your Data Pop!</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/tableau-mark-card-magic-make-your-data-pop">Read Article →</a>
+        <p>Building Clinical Insight with Tableau: ABG Analysis in Sepsis</p>
+        <a class="read" href="https://www.numpyninjaacademy.com/post/building-clinical-insight-with-tableau-abg-analysis-in-sepsis">Read Article →</a>
         <p>Tableau as a Clinical Watchdog: Alerting Doctors to SIRS Risk</p>
         <a class="read" href="https://www.numpyninjaacademy.com/post/tableau-as-a-clinical-watchdog-alerting-doctors-to-sirs-risk">Read Article →</a>
     </div>
