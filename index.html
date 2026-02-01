@@ -4,59 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajeshwari Anantharaman - Profile</title>
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #ffffff;
-            background-color: #000000; /* PURE AMOLED BLACK */
-            max-width: 600px;
+            background-color: #000000;
+            max-width: 720px;
             margin: 80px auto;
             padding: 0 20px;
         }
 
+        header {
+            margin-bottom: 3.5rem;
+        }
+
         h1 {
+            font-size: 2.6rem;
             font-weight: 700;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
             letter-spacing: -1px;
-            color: #ffffff;
+            margin-bottom: 0.4rem;
         }
 
         .tagline {
             color: #bfbfbf;
             font-size: 1.2rem;
-            margin-bottom: 2rem;
         }
 
-        section {
-            margin-bottom: 3rem;
+        /* ===== PREMIUM SECTION BOX ===== */
+        .box {
+            border: 1px solid #1f1f1f;
+            border-radius: 16px;
+            padding: 26px;
+            margin-bottom: 32px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        h2, h3 {
-            color: #ffffff;
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.06);
+        }
+
+        h2 {
+            font-size: 1.4rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 1px solid #2a2a2a; /* subtle divider */
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
         }
-
-        h2 { font-size: 1.5rem; }
-        h3 { font-size: 1rem; }
 
         p {
-            margin-bottom: 1rem;
             color: #e6e6e6;
+            margin-bottom: 1rem;
         }
 
+        /* ===== PROJECT CARDS ===== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #262626;
+            border-radius: 14px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+        }
+
+        .project-title {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        /* ===== LINKS ===== */
         .links {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .links li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         a {
@@ -73,9 +112,10 @@
         }
 
         footer {
+            text-align: center;
             font-size: 0.8rem;
             color: #8c8c8c;
-            margin-top: 5rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
@@ -86,31 +126,43 @@
         <p class="tagline">Data Analyst & Insight Enthusiast</p>
     </header>
 
-    <section id="about">
+    <section class="box" id="about">
         <h2>About Me</h2>
         <p>
             I transform complex datasets into actionable narratives.
             Specialized in SQL, Python, and data visualization, I focus on
-            finding the "why" behind the numbers.
+            uncovering the “why” behind the numbers.
         </p>
     </section>
 
-    <section id="skills">
+    <section class="box" id="skills">
         <h2>Skills</h2>
         <p>SQL, Tableau, PowerBI, Python, PostMan, JIRA, Slack, MS Teams</p>
     </section>
 
-    <section id="projects">
+    <section class="box" id="projects">
         <h2>Projects</h2>
-        <p>Please refer below for list project worked on</p>
 
-        <section id="project">
-            <h3>SEPSIS Project</h3>
-            <p>SEPSIS Project SEPSIS Project SEPSIS Project</p>
-        </section>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-title">Sepsis Analytics Project</div>
+                <p>
+                    Clinical data exploration focused on early sepsis indicators,
+                    biomarker trends, and outcome-driven insights using SQL and Tableau.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Healthcare Dashboard</div>
+                <p>
+                    Interactive Tableau dashboard highlighting patient risk stratification,
+                    utilization metrics, and alert-based monitoring.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="links">
+    <section class="box" id="links">
         <h2>Connect</h2>
         <ul class="links">
             <li><a href="https://www.linkedin.com/in/rajehwari-anantharaman-9a3635383">LinkedIn</a></li>
