@@ -186,26 +186,33 @@ header img {
 
 .connect-item {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 12px;
-    background: #0b0b0b;
+    flex-direction: column;        /* stack icon above text */
+    align-items: center;           /* horizontal center */
+    justify-content: center;       /* vertical center */
+    gap: 8px;
+
+    padding: 18px;
+    border-radius: 14px;
+    background: #000000;           /* pure AMOLED black */
     border: 1px solid #1c1c1c;
+
     color: #ffffff;
     text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .connect-item svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     fill: #ffffff;
 }
 
 .connect-item:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    box-shadow: 0 0 0 1px #ffffff20, 0 12px 32px rgba(0,0,0,0.8);
 }
 </style>
 </head>
