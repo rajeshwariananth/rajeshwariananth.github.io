@@ -186,14 +186,13 @@ header img {
 
 .connect-item {
     display: flex;
-    flex-direction: column;        /* stack icon above text */
-    align-items: center;           /* horizontal center */
-    justify-content: center;       /* vertical center */
-    gap: 8px;
+    align-items: center;          /* vertical center */
+    justify-content: center;      /* horizontal center */
+    gap: 10px;                    /* space between icon & text */
 
-    padding: 18px;
+    padding: 16px 18px;
     border-radius: 14px;
-    background: #000000;           /* pure AMOLED black */
+    background: #000000;          /* pure AMOLED black */
     border: 1px solid #1c1c1c;
 
     color: #ffffff;
@@ -205,14 +204,15 @@ header img {
 }
 
 .connect-item svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     fill: #ffffff;
+    flex-shrink: 0;               /* prevents icon from shrinking */
 }
 
 .connect-item:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 0 1px #ffffff20, 0 12px 32px rgba(0,0,0,0.8);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.75);
 }
 </style>
 </head>
